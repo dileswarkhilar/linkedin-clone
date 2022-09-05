@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./components/Home/Home";
 
 const App = () => {
   return (
-    <div>Welcome to Everyone lets build the linkedin clone</div>
-  )
-}
+    <main>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+      </Routes>
+    </main>
+  );
+};
 
-export default App
+export default App;
